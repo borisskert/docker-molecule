@@ -23,3 +23,8 @@ $ docker run --rm borisskert/molecule:latest --version
 molecule 3.0.4
    ansible==2.9.9 python==3.8
 ```
+
+## Further links
+
+* [borisskert/molecule-action](https://github.com/borisskert/molecule-action)
+* [borisskert/molecule @ Docker Hub](https://hub.docker.com/repository/docker/borisskert/molecule)
