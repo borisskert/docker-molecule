@@ -18,7 +18,7 @@ RUN apk add --no-cache \
     pip3 install yamllint==1.24.2 \
                  molecule==3.0.8 \
                  ansible==2.9.12 \
-                 ansible-lint==4.3.1 \
+                 ansible-lint==4.3.4 \
                  docker && \
     apk del .build-deps \
             g++ \
