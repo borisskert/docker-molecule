@@ -6,4 +6,4 @@ export ANSIBLE_FORCE_COLOR=1
 
 cd "${GITHUB_REPOSITORY:-$DOCKER_WORKDIR}"
 
-molecule $*
+molecule "$*"

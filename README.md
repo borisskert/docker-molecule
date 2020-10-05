@@ -10,7 +10,7 @@ This image is based on `alpine:3` and contains:
 * molecule 3.0.8
 * ansible 2.10.0
 * ansible-lint 4.3.5
-* yamllint 1.24.2
+* yamllint 1.25.0
 * docker cli and python package - Used by molecule to use the docker driver.
 * git - Used to checkout git repositories
 
