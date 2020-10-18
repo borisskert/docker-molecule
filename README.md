@@ -7,11 +7,12 @@ This docker image is used for [my molecule Github Action](https://github.com/bor
 This image is based on `alpine:3` and contains:
 
 * python3
-* molecule 3.0.8
+* molecule 3.1.2
 * ansible 2.10.1
 * ansible-lint 4.3.5
 * yamllint 1.25.0
-* docker cli and python package - Used by molecule to use the docker driver.
+* molecule-docker - the molecule docker driver
+* docker - cli and python package; used by the molecule docker driver.
 * git - Used to checkout git repositories
 
 ## Usage
@@ -20,7 +21,7 @@ Due to docker entrypoint is `molecule` the usage is quite simple:
 
 ```shell script
 $ docker run --rm borisskert/molecule:latest --version
-molecule 3.0.8
+molecule 3.1.2
    ansible==2.10.2 python==3.8
 ```
 
