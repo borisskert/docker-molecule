@@ -6,4 +6,6 @@ export ANSIBLE_FORCE_COLOR=1
 
 cd "${GITHUB_REPOSITORY:-$DOCKER_WORKDIR}"
 
-molecule "$*"
+# shellcheck disable=SC2048
+# Must not execute molecule with arguments as one command
+molecule $*
