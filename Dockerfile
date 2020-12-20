@@ -15,10 +15,12 @@ RUN apk add --no-cache \
                                 git \
                                 bash && \
     pip3 install --upgrade pip && \
-    pip3 install yamllint==1.25.0 \
-                 molecule==3.2.0 \
-                 ansible==2.10.3 \
+    pip3 install \
+                 molecule==3.2.1 \
+                 ansible==2.10.4 \
+                 ansible-base==2.10.4 \
                  ansible-lint==4.3.7 \
+                 yamllint==1.25.0 \
                  docker \
                  molecule-docker && \
     apk del .build-deps \
