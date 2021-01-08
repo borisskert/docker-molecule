@@ -16,7 +16,7 @@ RUN apk add --no-cache \
                                 bash && \
     pip3 install --upgrade pip && \
     pip3 install \
-                 molecule==3.2.1 \
+                 molecule==3.2.2 \
                  ansible==2.10.4 \
                  ansible-base==2.10.4 \
                  ansible-lint==4.3.7 \
