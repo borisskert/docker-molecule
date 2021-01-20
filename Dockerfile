@@ -17,8 +17,8 @@ RUN apk add --no-cache \
     pip3 install --upgrade pip && \
     pip3 install \
                  molecule==3.2.2 \
-                 ansible==2.10.4 \
-                 ansible-base==2.10.4 \
+                 ansible==2.10.5 \
+                 ansible-base==2.10.5 \
                  ansible-lint==4.3.7 \
                  yamllint==1.25.0 \
                  docker \
