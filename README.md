@@ -21,9 +21,9 @@ Due to docker entrypoint is `molecule` the usage is quite simple:
 
 ```shell script
 $ docker run --rm borisskert/molecule:latest --version
-molecule 3.2.2 using python 3.8 
+molecule 3.2.3 using python 3.8 
     ansible:2.10.5
-    delegated:3.2.2 from molecule
+    delegated:3.2.3 from molecule
     docker:0.2.4 from molecule_docker
 ```
 
