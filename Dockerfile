@@ -2,6 +2,8 @@ FROM alpine:3
 
 MAINTAINER borisskert <boris.skert@gmail.com>
 
+ENV CRYPTOGRAPHY_DONT_BUILD_RUST 1
+
 RUN apk add --no-cache \
             --virtual .build-deps \
                       g++ \
@@ -19,7 +21,7 @@ RUN apk add --no-cache \
                  molecule==3.2.3 \
                  ansible==2.10.5 \
                  ansible-base==2.10.5 \
-                 ansible-lint==4.3.7 \
+                 ansible-lint==5.0.0 \
                  yamllint==1.26.0 \
                  docker \
                  molecule-docker && \
