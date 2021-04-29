@@ -2,14 +2,13 @@ FROM alpine:3
 
 MAINTAINER borisskert <boris.skert@gmail.com>
 
-RUN apk add --no-cache \
+ENV CRYPTOGRAPHY_DONT_BUILD_RUST 1
+
+RUN apk add --no-cache --update \
             --virtual \
                 .build-deps \
                 g++ \
                 make \
-                rust \
-                cargo \
-                musl-dev \
                 python3-dev \
                 libffi-dev \
                 openssl-dev \
@@ -23,20 +22,17 @@ RUN apk add --no-cache \
                 && \
     pip3 install --upgrade pip && \
     pip3 install \
-                molecule==3.2.3 \
-                ansible==2.10.6 \
-                ansible-base==2.10.6 \
-                ansible-lint==5.0.3 \
-                yamllint==1.26.0 \
+                molecule==3.3.0 \
+                ansible \
+                ansible-base==2.10.8 \
+                ansible-lint==5.0.7 \
+                yamllint==1.26.1 \
                 docker \
                 molecule-docker \
                 && \
     apk del .build-deps \
                 g++ \
                 make \
-                rust \
-                cargo \
-                musl-dev \
                 python3-dev \
                 libffi-dev \
                 openssl-dev \

@@ -26,6 +26,10 @@ jobs:
         with:
           version: latest
 
+      - name: Reset cache
+        run: |
+          rm -rf /tmp/.buildx-cache
+
       - name: Cache Docker layers
         uses: actions/cache@v2
         with:
