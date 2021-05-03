@@ -25,7 +25,7 @@ RUN apk add --no-cache --update \
                 molecule==3.3.0 \
                 ansible \
                 ansible-base==2.10.8 \
-                ansible-lint==5.0.7 \
+                ansible-lint==5.0.8 \
                 yamllint==1.26.1 \
                 docker \
                 molecule-docker \
