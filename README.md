@@ -1,3 +1,5 @@
+⚠⚠⚠ **The code of this project has been moved to [borisskert/molecule-action](https://github.com/borisskert/molecule-action)** ⚠⚠⚠
+
 # docker-molecule
 
 This docker image is used for [my molecule Github Action](https://github.com/borisskert/molecule-action).
